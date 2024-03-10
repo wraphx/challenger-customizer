@@ -43,7 +43,6 @@ const Configurator = () => {
 
     const handleOverlayChange = (selectedOption) => {
         setOverlay(selectedOption.value);
-        // console.log(`You've selected the ${selectedOption.label} wrap for your `)
     };
 
 
@@ -55,7 +54,7 @@ const Configurator = () => {
                 <div className='configurator__section__title'>
                     Select Vehicle Wrap
                 </div>
-                <div style={{ marginLeft: '20px' }}>
+                <div style={{width: '320px'}}>
                     <Select
                         value={options.find(option => option.value === overlay)}
                         options={options}
@@ -64,10 +63,11 @@ const Configurator = () => {
                         components={{ Option }}
                         getOptionLabel={(option) => option.label}
                         getOptionValue={(option) => option.value}
+                        
                     />
                 </div>
                 <div className='configurator__section__title'>
-                    Change Hue Color
+                    
                     <div>
                         <ColorPicker />
                     </div>
