@@ -16,8 +16,8 @@ const ColorPicker = () => {
     return (
         <div>
             
-            <div style={{fontSize: '20px'}} className='current-color'>
-                <span>Current color is:    </span>
+            <div className='current-color'>
+                <span>Change Color:    </span>
                 
                 <input 
                     type="color" 
@@ -26,7 +26,7 @@ const ColorPicker = () => {
                     onChange={(e) => (state.base.BaseMtl = e.target.value)} // Update the color on change
                 />
             </div>
-            <div style={{ marginLeft: '50px', fontSize: '30px', color: "white" }}>
+            <div className='color-hex'>
                     {snap.base.BaseMtl}
                 </div>
             <button className='button' style={{marginLeft: '10px'}} onClick={resetColor}>Reset Original Color</button>

@@ -54,13 +54,14 @@ const Configurator = () => {
                 <div className='configurator__section__title'>
                     Select Vehicle Wrap
                 </div>
-                <div style={{width: '320px'}}>
+                <div className='selector' >
                     <Select
                         value={options.find(option => option.value === overlay)}
                         options={options}
                         onChange={handleOverlayChange}
                         placeholder="Select Material"
                         components={{ Option }}
+                        isSearchable={false}
                         getOptionLabel={(option) => option.label}
                         getOptionValue={(option) => option.value}
                         
