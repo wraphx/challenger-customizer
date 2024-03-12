@@ -25,11 +25,16 @@ const ColorPicker = () => {
                     value={snap.base.BaseMtl} // Use the current color
                     onChange={(e) => (state.base.BaseMtl = e.target.value)} // Update the color on change
                 />
+                {snap.base.BaseMtl}
+
+                <button className='button'  onClick={resetColor}>Reset Original Color</button>
             </div>
+            
             <div className='color-hex'>
-                    {snap.base.BaseMtl}
+                    
+                    
                 </div>
-            <button className='button' style={{marginLeft: '10px'}} onClick={resetColor}>Reset Original Color</button>
+            
         </div>
     );
 };

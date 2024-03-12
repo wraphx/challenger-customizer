@@ -63,17 +63,13 @@ const Configurator = () => {
                         components={{ Option }}
                         isSearchable={false}
                         getOptionLabel={(option) => option.label}
-                        getOptionValue={(option) => option.value}
-                        
+                        getOptionValue={(option) => option.value}                        
                     />
-                </div>
-                <div className='configurator__section__title'>
-                    
-                    <div>
-                        <ColorPicker />
-                    </div>
-                </div>
-                {/* <AppForm /> */}
+                    <div className='picker-color'>
+                         <ColorPicker />
+                         </div>
+                </div>                        
+                   
             </div>
         </>
     );
