@@ -18,7 +18,7 @@ export default function App() {
         <Canvas shadows camera={{ position: [0, 0, 20], fov: 35 }}>
           <color attach="background" args={['#15151a']} />
           <Suspense fallback={null}>
-            <Challenger scale={3} position={[0, -1.1, 0]} />
+          <Challenger scale={3} position={[0, -1.1, 0]} />
           </Suspense>
           <hemisphereLight intensity={0.5} />
           <ContactShadows resolution={1024} frames={1} position={[0, -1.16, 0]} scale={15} blur={0.5} opacity={0.5} far={20} />
@@ -51,7 +51,7 @@ export default function App() {
           </Environment>
           <ContactShadows position={[0, -0.8, 0.0]} opacity={0.75} scale={10} blur={2.5} far={0.8} />
           {/* <OrbitControls minPolarAngle={Math.PI / 2} maxPolarAngle={Math.PI / 2} enableZoom={true} enablePan={false} /> */}
-          <OrbitControls autoRotate enablePan={false} enableZoom={true} minPolarAngle={Math.PI / 2.2} maxPolarAngle={Math.PI / 2.2} />
+          <OrbitControls    enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.8} maxPolarAngle={Math.PI / 2.8} />
         </Canvas>
         <Configurator />
       </div>
