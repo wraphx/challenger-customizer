@@ -6,13 +6,14 @@ import { CustomizationProvider } from "./context/Customization"
 import Configurator from "./components/Configurator";
 import { Challenger } from "./vehicles/Challenger";
 
+
 export default function App() {
 
   return (
     <CustomizationProvider>
       <div className="App">
         <Loader
-        initialState={(active) => active} // Initial black out state
+         initialState={(active) => active} // Initial black out state
         />
         <Canvas shadows camera={{ position: [0, 0, 20], fov: 35 }}>
           <color attach="background" args={['#15151a']} />
