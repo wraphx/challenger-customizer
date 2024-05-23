@@ -16,7 +16,7 @@ export default function App() {
          initialState={(active) => active} // Initial black out state
         />
         <Canvas shadows camera={{ position: [0, 0, 20], fov: 35 }}>
-          <color attach="background" args={['#15151a']} />
+          <color attach="background" args={['grey']} />
           <Suspense fallback={null}>
           <Challenger scale={3} position={[0, -1.1, 0]} />
           </Suspense>
