@@ -105,4 +105,4 @@ console.log()
   )
 }
 
-useGLTF.preload('/models/Challenger.glb')
+useGLTF.preload('/Challenger.glb')
