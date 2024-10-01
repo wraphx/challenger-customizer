@@ -79,7 +79,6 @@ var TexturePaths = [
         overlay: 20,
         path: "textures/Zombie Base Color.png"
     },
-
     {
         overlay: 21,
         path: "textures/Linearock Base Color.png"
@@ -120,6 +119,26 @@ var TexturePaths = [
     {
         overlay: 30,
         path: "textures/Lagoon Base Color.png"
+    },
+    {
+        overlay: 31,
+        path: "textures/Panther Base Color.png"
+    },
+    {
+        overlay: 32,
+        path: "textures/Venom Base Color.png"
+    },
+    {
+        overlay: 33,
+        path: "textures/Neon Base Color.png"
+    },
+    {
+        overlay: 34,
+        path: "textures/Warrior Base Color.png"
+    },
+    {
+        overlay: 35,
+        path: "textures/Marble Base Color.png"
     },
 ]
 
